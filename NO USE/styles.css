@@ -1,0 +1,240 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+.nav-con{
+    color: black;
+    background: #BA63F140;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    list-style:none;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3em;
+    cursor: pointer; 
+}
+
+.nav-right{
+    display: flex;
+
+}
+
+
+.btn1{
+    font-style: bolder;
+    font-weight: 300;
+    background: #fff;
+    display: inline-block;
+    padding: 15px 40px; 
+    text-align: center;
+    /* align-items: center; */
+    border: 2px solid black;
+    border-radius: 40px;
+    position: absolute;
+    align-items: center;
+    /* display: flex; */
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    margin-left: 600px;
+    justify-content: center;
+    margin-top: 133px;
+
+    /* align-self: center;   */
+    /* align-content: center;  */
+}
+
+.btn1 p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.bg-img{
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin-left: 230px;
+    margin-top: -100px;
+    width: 950px;
+    height: 650px;
+    /* position: absolute; */
+}
+
+.motto{
+    /* justify-content: center; */
+
+    /* align-content: center; */
+    position: relative;  
+    top: -368px;
+    /* display: inline-block;   */
+}
+.motto p{
+    /* position: absolute; */
+    width: 276px;
+    height: 19px;
+    /* left: calc(50% - 276px/2 + 44px); */
+    top: 415px;
+    
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */    
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 400px;
+    font-family: 'Work Sans', sans-serif;
+    color: #000000;
+    width: 50%;
+    margin-top: -30px;
+}
+
+.motto h1{
+    text-align: center;
+    color: #7103B6;
+    font-size: 60px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 70.30px;
+    font-weight: 700;
+}
+
+
+.searchbar{
+    /* display: inline-block; */
+    position: absolute;
+    background: #7103B6;
+    color: #ffff;
+    padding: 0px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    height: 210px;
+    width: 1053px;
+    justify-content: center;
+    /* margin-left: 450px; */
+    /* margin-top: -200px; */
+    top: 150px;
+    left: calc(50% - 1068px/2 - 1px);
+    /* top: 520px; */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 80px;
+    color: #fff;
+    line-height: 95px;
+}
+
+
+
+
+
+.searchbars{
+    /* width: 80px; */
+    /* height: 55px; */
+    /* padding: 8px 30px; */
+    /* background: #fff; */
+    /* color: #7103B6; */
+    /* border-radius: 50%; */
+    /* position: absolute; */
+    /* left: 900px; */
+    /*  */
+
+}
+/*  */
+/* form{ */
+    /* background: #fff; */
+    /* border-radius: 40px; */
+    /* position: relative; */
+    /* width: 700px; */
+    /* height: 50px; */
+    /* top: 80px; */
+    /* left: 70px;    */
+    /* justify-content: center; */
+
+/* } */
+
+.btn2{
+    position: absolute;
+    top: 55px;
+    /* left: 950px; */
+    right: 80px;
+    /* height: 60px; */
+    /* width: 90px; */
+    border: none;
+}
+
+button{
+    border-radius: 30px;
+    height: 65px;
+    width: 200px;
+    color: #7103B6;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    border: none;
+    /* font-weight: 600; */
+}
+
+input{
+    /* border: none; */
+    position: absolute;
+    top: 26px;
+    left: 80px;
+    height: 60px;
+    width: 705px;
+    background: white;
+    color: #000000;
+    border-radius: 30px;
+    top: 70px ;
+    /* color: #000000; */
+    font-size: 18px;
+    font-style: normal;
+    font-family: 'Work Sans', sans-serif;
+    /* font-weight: 600; */
+    padding-left: 70px;
+    border: none;
+}
+
+input:focus{
+    color: #828282;
+    border: none;
+}
+
+.icon {
+        position: absolute;
+        left: 105px;
+        top: 60px;
+        color: #7103B6;
+        /* background: green; */
+        z-index: 1;
+        /* fill: purple; */
+    }
+
+.material-symbols-outlined{
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 40
+}
+/*  */
+/* .material-symbols-outlined{ */
+    /* background  : #7103B6; */
+    /* color: #000000; */
+    /* position: absolute; */
+    /* left: 90px; */
+    /* top: 70px; */
+    /* outline: none; */
+/* } */
+

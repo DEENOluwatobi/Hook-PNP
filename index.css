@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.main-body{
+    background: url('bg img.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.nav-con{
+    width: 100%;
+    height: auto;
+     padding: 15px 5px;
+     color: black;
+     background: #BA63F140;  
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 100px;
+}
+.nav-links{
+     list-style:none;
+     font-size: 1em;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     gap: 3em;
+     cursor: pointer; 
+}
+  
+.n-link{
+     color: black;
+     text-decoration: none;
+}
+     
+.nav-right{
+     display: flex; 
+     justify-content: space-between;
+     align-items: center;
+     gap: 2em; 
+}
+.login-btn{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.n-link:hover, .login-btn:hover{
+    color: #7103B6;
+}
+.join-btn{
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #7103B6;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.welcome, .motto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 8px;
+    border: 1px solid black;
+    border-radius: 35px;
+    width: 25%;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.motto h1{
+    font-size: 3em;
+    font-family: 'Poppins';
+    font-weight: 800;
+    color: #7103B6;
+}
+.motto p{
+    font-weight: bold;
+    font-size: .8em;
+}
+
+.fa-bars{
+    display: none;
+}
+.search-con{
+    width: 70%;
+    margin: 70px auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7103B6;
+    border-radius: 50px;
+    color: white;
+}
+.search-title{
+    width: 100%;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 0 10px;
+}
+.search-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(238, 237, 238);
+    border-radius: 30px;
+    padding: 20px;
+    width: 70%;
+    gap: 10px;
+}
+.fa-map-marker{
+    color: #7103B6;
+    font-size: 1.5em;
+}
+.searchbar input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.search-btn{
+    width: 27%;
+    background-color: rgb(238, 237, 238);
+    border-radius: 50px;
+    padding: 20px;
+    color: #7103B6;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+.menu{
+    display: none;
+}
+            /* Login Screen */
+#l-btn{
+    position: relative;
+}
+#l-scn, #s-scn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.575);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: .5s ease-in-out;
+}
+.close{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: white;
+    border-radius: 50px;
+    padding: 7px 15px;
+    cursor: pointer;
+}
+.l-con{
+    width: 35%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.l-title{
+    background-color: #7103B6;
+    padding: 30px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+.l-body{
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.l-form{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    color: rgb(86, 81, 81);
+    font-size: .8em;
+}
+.l-form label{
+    padding: 5px 0;
+    font-weight: bold;
+}
+.l-input{
+    padding: 15px;
+    border: 1px solid rgb(155, 151, 155);
+    width: 100%;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 15px;
+    background: transparent;
+}
+.fgt-pwd{
+    color: #7103B6;
+    font-weight: 600;
+    cursor: pointer;
+}
+.form-btn{
+    width: 50%;
+    min-width: 50px;
+    border-radius: 50px;
+    padding: 15px;
+    border: 1px solid rgb(155, 151, 155);
+    background-color: #7103B6;
+    color: white;
+    margin: 15px auto 0 auto;
+}
+.su-instead{
+    gap: 5px;
+    font-size: .8em;
+}
+.su-p{
+    color: #7103B6;
+    cursor: pointer;
+}
+
+/* LAPTOP SCREEN */
+@media screen and (max-width: 1200px) {
+    .nav-con{
+         margin-bottom: 70px;
+    }
+    .welcome p{
+        font-size: 1.2em;
+        width: 30%;
+    }
+    .search-con{
+        width: 80%;
+        margin: 50px auto;
+    }
+
+}
+
+
+/* TABLET SCREEN */
+@media screen and (max-width: 800px) {
+    .nav-con{
+        margin-bottom: 50px;
+   }
+    .welcome p{
+        font-size: 1em;
+        width: 40%;
+    }
+    .search-con{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .motto h1{
+        font-size: 2em;
+    }
+    .fa-bars{
+        display: initial;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #7103B6;
+        padding: 3px 5px;
+        transition: .3s ease-in-out;
+        position: relative;
+    }
+    .min-nav-links,
+    .min-n-link,
+    .min-nav-right,
+    .min-login-btn,
+    .min-join-btn{
+        display: initial;
+    }
+    .nav-links, .nav-right{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        padding: 10px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #f1e9f6; 
+        width: 100%;
+        border-bottom: 1px solid #7103B6;
+        gap: 10px;
+    }
+    .min-nav-links,
+    .min-nav-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .min-nav-links a,
+    .min-nav-right a{
+        text-decoration:none;
+        color: black;
+        font-weight: 500;
+        font-size: 1.2em;
+    }  
+    .min-join-btn{
+        color: white !important;
+        text-decoration: none;
+        padding: 10px 30px;
+        background-color: #7103B6;
+        border-radius: 25px;
+    }
+    .l-con{
+        width: 50%;
+    } 
+    .l-title{
+        padding: 15px;
+    }
+    .l-form{
+        padding: 15px;
+    }
+    .l-input{
+        padding: 12px;
+    }
+}
+
+
+/* TABLET SCREEN */
+@media screen and (max-width: 600px) {
+    .welcome p{
+        font-size: .8em;
+        width: 50%;
+    }
+    .motto h1{
+        font-size: 1.6em;
+    }
+    .nav-links, .nav-right{
+        display: none;
+    }
+    .search-con{
+        width: 90%;
+        padding: 30px 20px;
+        border-radius: 30px;
+    }
+    .search-title{
+        text-align: center;
+    }
+    .search-form{
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .searchbar{
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .search-btn{
+        width: 50%;
+        background-color: rgb(238, 237, 238);
+        border-radius: 50px;
+        padding: 10px 20px;
+        color: #7103B6;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+    .l-con{
+        width: 80%;
+    } 
+    .l-title{
+        padding: 12px;
+    }
+    .l-form{
+        padding: 12px;
+    }
+    .l-input{
+        padding: 10px;
+    }
+}
+   
