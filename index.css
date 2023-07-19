@@ -143,11 +143,18 @@
     color: #7103B6;
     font-size: 1.1em;
     font-weight: 500;
+    outline: none;
+    border: none;
+    transition: .3s ease-in-out;
+}
+.search-btn:hover{
+    background-color: #cea2ec;
+    color: white;
 }
 .menu{
     display: none;
 }
-            /* Login Screen */
+    /*For  Login Screen */
 #l-btn{
     position: relative;
 }
@@ -246,6 +253,31 @@
     cursor: pointer;
 }
 
+/* Dashboard Screen */
+.user-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #7103B6;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #7103B6;
+    border-radius: 25px;
+    font-size: .8em;
+    gap: 1em;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.user-btn:hover{
+    background-color: #f5e8fd;
+}
+.fa-caret-down{
+    font-size: 1.5em;
+    color: black;
+}
+
+
+
 /* LAPTOP SCREEN */
 @media screen and (max-width: 1200px) {
     .nav-con{
@@ -261,6 +293,8 @@
     }
 
 }
+
+
 
 
 /* TABLET SCREEN */
@@ -349,7 +383,8 @@
 }
 
 
-/* TABLET SCREEN */
+
+/* PHONE SCREEN */
 @media screen and (max-width: 600px) {
     .welcome p{
         font-size: .8em;

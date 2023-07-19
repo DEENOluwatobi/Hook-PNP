@@ -15,6 +15,7 @@
    
     <link rel="stylesheet" href="index.css ">
     <script src="index.js" defer></script>
+    <script src="search.js" defer></script>
     <title>HOOK PQ</title>
 </head>
 <body>
@@ -126,8 +127,10 @@
                         <input type="text" name="Search" placeholder="Search by location"> 
                     </div>
  
-                    <button class="search-btn" type="search">Search</button>
+                    <button class="search-btn" type="search" onclick="handleSearch()">Search</button>
                 </form>
+
+                <div id="resultsContainer"></div>
             </div>
      </div> 
 </body>
