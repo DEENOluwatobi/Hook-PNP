@@ -363,12 +363,16 @@
 
 /* PHONE SCREEN */
 @media screen and (max-width: 600px) {
+    .welcome{
+        margin-top: 6rem;
+    }
     .welcome p{
         font-size: .8em;
+        margin-bottom: 2rem;
         width: 50%;
     }
     .motto h1{
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
     .nav-links, .nav-right{
         display: none;
