@@ -51,6 +51,16 @@ const transactions = [
         amount: 'N71,340',
         status: 'Debit'
     },
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 'N23,268',
+        status: 'Credit'
+    },
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 'N90,236',
+        status: 'Credit'
+    },
 ];
 
 function displayTransactions() {
@@ -176,8 +186,6 @@ function displayPeople() {
         const locationElement = document.createElement('p');
         locationElement.classList.add('person-location'); 
         locationElement.textContent = `${person.state}, ${person.country}`; 
-
-
 
         infoContainer.appendChild(statusContainer);
         infoContainer.appendChild(locationElement);
