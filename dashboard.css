@@ -71,8 +71,6 @@
 .w-left{
     font-size: .6em;
     color: #7103B6;
-    
-   
     font-weight: 500;
     
 }
@@ -115,6 +113,68 @@
 .person-card{
     width: 18%;
     height: 13em;
-    border: 2px solid #7103B6;
+    border: 3px solid #7103B6;
     border-radius: 15px;
+    position: relative;
+}
+.online-status {
+    color: rgb(59, 63, 59);
+}
+
+.offline-status {
+    color: rgb(63, 60, 59);
+}
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.status-dot.online {
+    background-color: rgb(13, 194, 13);
+}
+
+.status-dot.offline {
+    background-color: red;
+}
+.person-con{
+    position: absolute;
+    bottom: 10px;
+    left: 22px;
+    background: rgba(255, 255, 255, 0.68);
+    border-radius: 7px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    width: 80%;
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.name-container{
+    text-align: center;
+    font-size: .9em;
+    font-weight: 500;
+}
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.status-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-size: .7em;
+}
+.person-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7em;
+}
+.person-name, .person-location{
+    margin: 0;
 }
