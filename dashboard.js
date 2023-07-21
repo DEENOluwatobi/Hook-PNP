@@ -2,24 +2,39 @@
 
 const people = [
     {
-        picture: 'person1.jpg',
+        picture: 'Images/lady1.jpeg',
         name: 'Kim Wesley',
-        country: 'USA'
+        state: 'Lagos',
+        country: 'USA',
+        online: true,
     },
     {
-        picture: 'person2.jpg',
+        picture: 'Images/lady2.jpeg',
         name: 'Mama Debby',
-        country: 'Canada'
+        state: 'Lagos',
+        country: 'Canada',
+        online: true,
     },
     {
-        picture: 'person3.jpg',
+        picture: 'Images/lady3.jpeg',
         name: 'Juliet Sexy',
-        country: 'UK'
+        state: 'Lagos',
+        country: 'UK',
+        online: true,
     },
     {
-        picture: 'person3.jpg',
+        picture: 'Images/lady4.jpeg',
         name: 'Jade Gomez',
-        country: 'Lagos'
+        state: 'Lagos',
+        country: 'Lagos',
+        online: true,
+    },
+    {
+        picture: 'Images/lady5.jpeg',
+        name: 'Mama Debby',
+        state: 'Lagos',
+        country: 'Canada',
+        online: true
     },
     
 ];
@@ -29,24 +44,21 @@ function displayPeople() {
 
     for (const person of people) {
         const personDiv = document.createElement('div');
-        personDiv.classList.add('person-card'); 
-
-        const img = document.createElement('img');
-        img.classList.add('person-img'); 
-        img.src = person.picture;
+        personDiv.classList.add('person-card');
+        personDiv.style.backgroundImage = `url(${person.picture})`;
+        personDiv.style.backgroundSize = 'cover'
+        personDiv.style.backgroundPosition = 'center'
 
         const nameElement = document.createElement('p');
         nameElement.classList.add('person-name'); 
-        nameElement.textContent = `Name: ${person.name}`;
+        nameElement.textContent = `${person.name}`;
 
         const countryElement = document.createElement('p');
         countryElement.classList.add('person-country'); 
-        countryElement.textContent = `Country: ${person.country}`;
+        countryElement.textContent = `${person.country}`;
 
-        personDiv.appendChild(img);
         personDiv.appendChild(nameElement);
         personDiv.appendChild(countryElement);
-
         container.appendChild(personDiv);
     }
 }
