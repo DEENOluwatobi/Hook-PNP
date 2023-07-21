@@ -54,6 +54,7 @@ function displayPeople() {
 
         const nameContainer = document.createElement('div');
         nameContainer.classList.add('name-container');
+        
         const nameElement = document.createElement('p');
         nameElement.classList.add('person-name'); 
         nameElement.textContent = person.name;
@@ -87,9 +88,6 @@ function displayPeople() {
 
         infoContainer.appendChild(statusContainer);
         infoContainer.appendChild(locationElement);
-
-        // personDiv.appendChild(nameContainer);
-        // personDiv.appendChild(infoContainer);
 
         personCon.appendChild(nameContainer);
         personCon.appendChild(infoContainer);

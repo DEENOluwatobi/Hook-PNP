@@ -322,6 +322,7 @@
         width: 100%;
         border-bottom: 1px solid #7103B6;
         gap: 10px;
+        z-index: 20;
     }
     .min-nav-links,
     .min-nav-right{
