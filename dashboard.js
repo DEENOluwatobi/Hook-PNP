@@ -13,13 +13,43 @@ function generateReferenceNumber() {
 const transactions = [
     {
         referenceNumber: generateReferenceNumber(),
-        amount: 1350,
+        amount: 'N10,350',
         status: 'Debit'
     },
     {
         referenceNumber: generateReferenceNumber(),
-        amount: 2340,
+        amount: 'N20,340',
         status: 'Credit'
+    },
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 'N13,328',
+        status: 'Debit'
+    },
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 'N23,268',
+        status: 'Credit'
+    },
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 'N90,236',
+        status: 'Credit'
+    },
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 'N31,340',
+        status: 'Credit'
+    },
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 'N10,350',
+        status: 'Debit'
+    },
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 'N71,340',
+        status: 'Debit'
     },
 ];
 
