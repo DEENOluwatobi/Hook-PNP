@@ -189,6 +189,33 @@
 .person-name, .person-location{
     margin: 0;
 }
+.wh-table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wh-head{
+    width: 90%;
+}
+.wh-row{
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(50, 48, 50);
+    font-weight: 300;
+    font-size: .7em;
+    border-bottom: 1px solid rgb(166, 161, 166);
+}
+.debit {
+    color: red;
+}
+.credit {
+    color: green;
+}
+
 
 
 

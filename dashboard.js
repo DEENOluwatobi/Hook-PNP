@@ -1,4 +1,67 @@
-// FOR TOP BABES CONTAINER
+// DASHBOARD.JS - JavaScript file for Dashboard page.
+// I will be adding comment for better understanding of the code.
+
+
+// FOR WALLET HISTORY DETAILS--------------------------------------------------------
+
+// Function to generate a random 11-digit reference number
+function generateReferenceNumber() {
+    return Math.floor(10000000000 + Math.random() * 90000000000).toString();
+}
+
+// Array of objects representing transactions
+const transactions = [
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 1350,
+        status: 'Debit'
+    },
+    {
+        referenceNumber: generateReferenceNumber(),
+        amount: 2340,
+        status: 'Credit'
+    },
+];
+
+function displayTransactions() {
+    const tableBody = document.getElementById('transaction-table-body');
+
+    // Loop through the transactions array and create table rows for each transaction
+    for (const transaction of transactions) {
+
+        const row = document.createElement('tr');
+        row.classList.add('row-cell');
+
+        const referenceNumberCell = document.createElement('td');
+        referenceNumberCell.classList.add('ref-num-cell');
+
+        const amountCell = document.createElement('td');
+        amountCell.classList.add('amount-cell');
+
+        const statusCell = document.createElement('td');
+        statusCell.classList.add('status-cell');
+
+        referenceNumberCell.textContent = transaction.referenceNumber;
+        amountCell.textContent = transaction.amount;
+        statusCell.textContent = transaction.status;
+
+        if (transaction.status === 'Debit') {
+            statusCell.classList.add('debit');
+        } else if (transaction.status === 'Credit') {
+            statusCell.classList.add('credit');
+        }
+
+        row.appendChild(referenceNumberCell);
+        row.appendChild(amountCell);
+        row.appendChild(statusCell);
+
+        tableBody.appendChild(row);
+    }
+}
+
+
+
+// FOR TOP BABES CONTAINER--------------------------------------------------------
 
 const people = [
     {
@@ -97,4 +160,9 @@ function displayPeople() {
     }
 }
 
-window.onload = displayPeople;
+
+window.onload = function() {
+    generateReferenceNumber();
+    displayTransactions();
+    displayPeople();
+};

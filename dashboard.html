@@ -83,29 +83,26 @@
                     </div>
                 </div>
 
+                    <!-- WALLET HISTORY POP UP SCREEN START -->
                 <div id="l-scn" >
                     <div class="close" onclick="ClosePopUpScreen()"> x </div>
                     <div class="l-con">
                         <div class="l-title">Wallet History</div>
                         <div class="l-body">
-                            <form class="l-form" action="">
-                                <label for="email">Email Address</label>
-                                <input class="l-input" type="text" placeholder="Enter your email address">
-
-                                <label for="password">Password</label>
-                                <input class="l-input" type="password" placeholder="Enter your password" >
-
-                                <div class="fgt-pwd">Forgot Password?</div>
-                                <input class="form-btn" type="submit" value="Sign in">
-
-                            </form>
-                            <p class="su-instead" onclick="loginInstead()">
-                                <span class="su-p">Sign up</span>
-                                instead
-                            </p>
+                            <table class="wh-table">
+                                <thead class="wh-head">
+                                    <tr class="wh-row">
+                                        <th>Reference</th>
+                                        <th>Amount</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="transaction-table-body"></tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
+                <!-- WALLET HISTORY POP UP SCREEN END -->
                 
             </div>
      </div> 
