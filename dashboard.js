@@ -1,5 +1,8 @@
 // DASHBOARD.JS - JavaScript file for Dashboard page.
 // I will be adding comment for better understanding of the code.
+// ----------------------------------------------------------------------------------------------------------------
+
+
 
 
 // FOR WALLET HISTORY DETAILS--------------------------------------------------------

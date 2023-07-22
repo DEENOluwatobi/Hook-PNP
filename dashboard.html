@@ -76,12 +76,28 @@
 
                     </div>
                     <div class="w-left ">
-                        <div class="add-money flex-center">
+                        <div class="add-money flex-center" onclick="SignUpScreen()">
                             <i class="fa fa-plus" aria-hidden="true"></i>
                             <span>Add Money</span>
                         </div>
                     </div>
                 </div>
+
+                    <!-- Add money pop up start -->
+                    <div id="s-scn" >
+                        <div class="close" onclick="ClosePopUpScreen()"> x </div>
+                        <div class="l-con">
+                            <div class="l-title">Add Money</div>
+                            <div class="l-body">
+                                <div class="l-form">
+                                    <label for="email">Amount</label>
+                                    <input class="l-input" type="number" placeholder="Enter the amount to add">
+                                    <button class="form-btn">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add money popup end -->
 
                     <!-- WALLET HISTORY POP UP SCREEN START -->
                 <div id="l-scn" >
