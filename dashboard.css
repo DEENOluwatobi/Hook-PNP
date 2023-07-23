@@ -92,7 +92,7 @@
 .add-money:hover{
     background-color: rgb(232, 219, 243);
 }
-.top-babes{
+.top{
     width: 95%;
     margin: 0 auto;
     padding: 10px 20px;
@@ -113,15 +113,15 @@
     font-size: .9em;
     text-decoration: none;
 }
-.p-con{
+.p-con, .s-con{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1em;
-
 }
-.person-card{
+
+.person-card, .story-card{
     width: 18%;
     height: 13em;
     border: 3px solid #7103B6;

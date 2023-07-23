@@ -149,6 +149,7 @@ function displayPeople() {
     const container = document.getElementById('people-container');
 
     for (const person of people) {
+
         const personDiv = document.createElement('div');
         personDiv.classList.add('person-card'); 
         personDiv.style.backgroundImage = `url(${person.picture})`; 
@@ -195,15 +196,76 @@ function displayPeople() {
 
         personCon.appendChild(nameContainer);
         personCon.appendChild(infoContainer);
-        personDiv.appendChild(personCon)
+        personDiv.appendChild(personCon);
 
         container.appendChild(personDiv);
     }
+};
+
+
+
+// FOR TOP STORIES PANE ---------------------------------------------------------------
+
+const stories = [
+    {
+        picture: 'Images/lady1.jpeg',
+        name: 'Kim Wesley',
+        state: 'New York',
+        country: 'USA',
+        online: true,
+    },
+    {
+        picture: 'Images/lady2.jpeg',
+        name: 'Mama Debby',
+        state: 'Lagos',
+        country: 'Nigeia',
+        online: true,
+    },
+    {
+        picture: 'Images/lady3.jpeg',
+        name: 'Juliet Sexy',
+        state: 'Tokyo',
+        country: 'China',
+        online: false,
+    },
+    {
+        picture: 'Images/lady4.jpeg',
+        name: 'Jade Gomez',
+        state: 'Lagos',
+        country: 'Nigeria',
+        online: false,
+    },
+    {
+        picture: 'Images/lady5.jpeg',
+        name: 'Mama Debby',
+        state: 'Ogun',
+        country: 'Nigeria',
+        online: true
+    },
+    
+];
+
+
+function displayStories() {
+    const storyContainer = document.getElementById('people-stories');
+
+    for (story of stories) {
+
+        const storyDiv = document.createElement('div');
+        storyDiv.classList.add('story-card'); 
+        storyDiv.style.backgroundImage = `url(${story.picture})`; 
+        storyDiv.style.backgroundSize = "cover";
+        storyDiv.style.backgroundPosition = "center";
+
+        storyContainer.appendChild(storyDiv);
+    }
 }
+
 
 
 window.onload = function() {
     generateReferenceNumber();
     displayTransactions();
     displayPeople();
+    displayStories();
 };
