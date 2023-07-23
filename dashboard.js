@@ -208,39 +208,24 @@ function displayPeople() {
 
 const stories = [
     {
-        picture: 'Images/lady1.jpeg',
-        name: 'Kim Wesley',
-        state: 'New York',
-        country: 'USA',
-        online: true,
+        picture: 'Images/story1.jpeg',
+        title: 'We did it inside his car in day light',
     },
     {
-        picture: 'Images/lady2.jpeg',
-        name: 'Mama Debby',
-        state: 'Lagos',
-        country: 'Nigeia',
-        online: true,
+        picture: 'Images/story2.jpeg',
+        title: 'We did it inside his car in day light',
     },
     {
-        picture: 'Images/lady3.jpeg',
-        name: 'Juliet Sexy',
-        state: 'Tokyo',
-        country: 'China',
-        online: false,
+        picture: 'Images/story3.jpeg',
+        title: 'We did it inside his car in day light',
     },
     {
-        picture: 'Images/lady4.jpeg',
-        name: 'Jade Gomez',
-        state: 'Lagos',
-        country: 'Nigeria',
-        online: false,
+        picture: 'Images/story4.jpeg',
+        title: 'We did it inside his car in day light',
     },
     {
-        picture: 'Images/lady5.jpeg',
-        name: 'Mama Debby',
-        state: 'Ogun',
-        country: 'Nigeria',
-        online: true
+        picture: 'Images/story5.jpeg',
+        title: 'We did it inside his car in day light',
     },
     
 ];
@@ -257,6 +242,16 @@ function displayStories() {
         storyDiv.style.backgroundSize = "cover";
         storyDiv.style.backgroundPosition = "center";
 
+        const storyCon = document.createElement('div');
+        storyCon.classList.add('story-con'); 
+
+        const titleElement = document.createElement('p');
+        titleElement.classList.add('story-name'); 
+        titleElement.textContent = story.title;
+
+
+        storyCon.appendChild(titleElement);
+        storyDiv.appendChild(storyCon);
         storyContainer.appendChild(storyDiv);
     }
 }
