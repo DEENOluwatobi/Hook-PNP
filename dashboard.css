@@ -260,7 +260,18 @@
     .p-con{
         gap: 5px;
     }
-   
+    .info-container{
+        flex-direction: column;
+    }
+    .person-name,
+    .online-status,
+    .offline-status
+    {
+        font-size: .8em;
+    }
+    .person-location{
+        font-size: .6em;
+    }
 }
 
 
