@@ -118,7 +118,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1em;
+    gap: 10px;
+    overflow-x: scroll;
 }
 
 .person-card, .story-card{

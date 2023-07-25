@@ -143,6 +143,7 @@ const people = [
         online: true
     },
     
+    
 ];
 
 function displayPeople() {
