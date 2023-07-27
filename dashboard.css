@@ -7,6 +7,9 @@
 .nav-end{
     gap: 20px;
 }
+.active{
+    color: #7103B6;
+}
 .user-btn{
     display: flex;
     justify-content: center;

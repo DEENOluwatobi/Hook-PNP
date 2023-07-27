@@ -4,11 +4,25 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+.active{
+    color: #7103B6;
+}
 .main-body{
+    position: relative;
+    width: 100%;
+}
+.main-body::before{
+    content: '';
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 70vh;
+    position: absolute;
     background: url('bg img.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50%;
+    z-index: -10;
 }
 .nav-con{
     width: 100%;
@@ -19,7 +33,7 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin-bottom: 100px;
+     margin-bottom: 50px;
 }
 .nav-links{
      list-style:none;
