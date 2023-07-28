@@ -263,6 +263,26 @@ const stories = [
         picture: 'Images/story5.jpeg',
         title: 'We did it inside his car in day light',
     },
+    {
+        picture: 'Images/story1.jpeg',
+        title: 'We did it inside his car in day light',
+    },
+    {
+        picture: 'Images/story2.jpeg',
+        title: 'We did it inside his car in day light',
+    },
+    {
+        picture: 'Images/story3.jpeg',
+        title: 'We did it inside his car in day light',
+    },
+    {
+        picture: 'Images/story4.jpeg',
+        title: 'We did it inside his car in day light',
+    },
+    {
+        picture: 'Images/story5.jpeg',
+        title: 'We did it inside his car in day light',
+    },
     
 ];
 
