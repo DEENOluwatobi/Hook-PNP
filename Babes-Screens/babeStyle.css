@@ -158,9 +158,41 @@
 }
 @media screen and (max-width: 1100px){
     .price-div{
-        width: 90%;
+        width: 50%;
     } 
     .size{
         height: 7em;
     }
-}   
+}  
+@media screen and (max-width: 700px){
+    .price-div{
+        width: 90%;
+    } 
+} 
+
+@media screen and (max-width: 460px){
+  
+    .age-loc{
+        grid-template-columns: 30% 70%;
+    }
+    .pro-price{
+        margin-top: 5px;
+    }
+    .price-div{
+        width: 100%;
+    } 
+    #user-loc,
+    #user-age{
+        font-size: .8em;
+    }
+    .ind{
+        font-size: .6em;
+    }
+    #short-price,
+    #over-price{
+        font-size: .8em;
+    }
+    .size{
+        height: 5em;
+    }
+}  
