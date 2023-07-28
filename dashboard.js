@@ -142,6 +142,42 @@ const people = [
         country: 'Nigeria',
         online: true
     },
+
+    {
+        picture: 'Images/lady1.jpeg',
+        name: 'Kim Wesley',
+        state: 'New York',
+        country: 'USA',
+        online: true,
+    },
+    {
+        picture: 'Images/lady2.jpeg',
+        name: 'Mama Debby',
+        state: 'Lagos',
+        country: 'Nigeia',
+        online: true,
+    },
+    {
+        picture: 'Images/lady3.jpeg',
+        name: 'Juliet Sexy',
+        state: 'Tokyo',
+        country: 'China',
+        online: false,
+    },
+    {
+        picture: 'Images/lady4.jpeg',
+        name: 'Jade Gomez',
+        state: 'Lagos',
+        country: 'Nigeria',
+        online: false,
+    },
+    {
+        picture: 'Images/lady5.jpeg',
+        name: 'Mama Debby',
+        state: 'Ogun',
+        country: 'Nigeria',
+        online: true
+    },
     
 ];
 

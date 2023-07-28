@@ -119,13 +119,13 @@
 .p-con, .s-con{
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 1em;
+    overflow: scroll;
 }
 
 .person-card, .story-card{
-    width: 18%;
+    width: 12em;
+    min-width: 12em;
     height: 13em;
     border: 3px solid #7103B6;
     border-radius: 15px;
