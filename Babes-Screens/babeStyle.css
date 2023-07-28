@@ -1,0 +1,22 @@
+.profile-pane{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.profile-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-title{
+    font-size: 1.5em;
+    color: rgb(61, 59, 61);
+    font-weight: 500;
+}
+.edit-btn{
+    color: #7103B6;
+    font-size: .9em;
+    text-decoration: none;
+    cursor: pointer;
+}

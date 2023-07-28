@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../dashboard.css">
+    <link rel="stylesheet" href="babeStyle.css">
+    <script src="../index.js" defer></script>
+    <script src="babeScript.js" defer></script>
+    <title>HOOK PQ</title>
+</head>
+<body>
+     <div class="main-body">
+            <div class="nav-con">
+                <a href="../homepage.html">
+                    <img src="../Mask group.svg">
+                </a>
+                
+                <div class="nav-links">
+                    <a class="n-link active" href="babeDash.html">Dashboard</a>
+                    <a class="n-link" href="../liveroom.html">Live Room</a>
+                    <a class="n-link" href="">Stories</a>
+                </div>
+                
+                <div class="nav-end flex-center">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+
+                    <div class="nav-right">
+                        <div class="user-btn">
+                            Britney Willis
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>                       
+                    </div>
+                    <i class="fa fa-bars" onclick="toggleMenu()"></i>
+                </div>
+                
+                <!-- MENU FOR SMALL SCREEN START -->
+                <div class="menu">
+                        <div class="min-nav-links">
+                            <a class="min-n-link" href="../babeDash.html">Dashboard</a>
+                            <a class="min-n-link" href="../liveroom.html">Live Room</a>
+                            <a class="min-n-link" href="">Stories</a>
+                        </div>
+                        <div class="min-nav-right">
+                            <div class="user-btn">
+                                Britney Willis
+                               <i class="fa fa-caret-down" aria-hidden="true"></i>
+                           </div> 
+                        </div>
+                </div>
+                <!-- MENU FOR SMALL SCREEN END -->
+                
+            </div>
+
+            <div class="wallet flex-center">
+                <div class="w-con ">
+                    <div class="w-right">
+                        <div class="w-title">
+                            Wallet Balance
+                        </div>
+                        <div class="w-amount">
+                            N200,000
+                        </div>
+                        <div class="w-history flex-center" onclick="PopUpScreen()">
+                            <span>Wallet History</span>
+                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                        </div>
+
+                    </div>
+                    <div class="w-left ">
+                        <div class="add-money flex-center" onclick="SignUpScreen()">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <span>Withdraw</span>
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- Add money pop up start -->
+                    <div id="s-scn" >
+                        <div class="close" onclick="ClosePopUpScreen()"> x </div>
+                        <div class="l-con">
+                            <div class="l-title">Withdraw</div>
+                            <div class="l-body">
+                                <div class="l-form">
+                                    <label for="email">Amount</label>
+                                    <input class="l-input" type="number" placeholder="Enter the amount to withdraw">
+                                    <button class="form-btn">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add money popup end -->
+
+                    <!-- WALLET HISTORY POP UP SCREEN START -->
+                <div id="l-scn" >
+                    <div class="close" onclick="ClosePopUpScreen()"> x </div>
+                    <div class="l-con">
+                        <div class="l-title">Wallet History</div>
+                        <div class="l-body">
+                            <table class="wh-table">
+                                <thead class="wh-head">
+                                    <tr class="wh-row">
+                                        <th>Reference</th>
+                                        <th>Amount</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="transaction-table-body" class="wh-body"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- WALLET HISTORY POP UP SCREEN END -->
+                
+            </div>
+     </div> 
+
+     <div class="profile-pane">
+        <div class="profile-header">
+            <span class="profile-title">Profile</span>
+            <span class="edit-btn">Edit profile</span>
+        </div>
+
+        <div class="prf-con">
+
+        </div>
+
+     </div>
+     
+     
+
+     <div class="top">
+        <div class="tb-header">
+            <span class="tb-title">Top Stories</span>
+            <a class="s-more" href="">Search more</a>
+        </div>
+        <div id="people-stories" class="s-con"></div>
+     </div>
+
+</body>
+</html>
