@@ -14,13 +14,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
    
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="search.css">
     <script src="index.js" defer></script>
     <script src="search.js" defer></script>
     <title>HOOK PQ</title>
 </head>
 <body>
      <div class="main-body">
-            <div class="nav-con">
+            <div id="navBar" class="nav-con">
                 <img src="./Mask group.svg">
                 
                 <div class="nav-links">
@@ -48,33 +49,37 @@
                             <a class="min-join-btn" href="dashboard.html">Dashboard</a>
                         </div>
                 </div>
-                <!-- MENU FOR SMALL SCREEN END -->
-                
+                <!-- MENU FOR SMALL SCREEN END -->     
             </div>
 
-            <div class="welcome">
-                <p>Welcome to hookPNP</p>
+            <div id="welcomeDiv">
+                <div class="welcome">
+                    <p>Welcome to hookPNP</p>
+                </div>
+                <div class="motto">
+                    <h1>The home of pleasure</h1>
+                    <p>Bringing pleasure to your fingertips</p>
+                </div> 
             </div>
-            <div class="motto">
-                <h1>The home of pleasure</h1>
-                <p>Bringing pleasure to your fingertips</p>
-            </div> 
+
+            <div id="search-head">
+                <img src="./Mask group.svg">
+            </div>
             
-            <div class="search-con">
+            <div id="searchConDiv" class="search-con" onclick="SlideUp()">
                 <div class="search-title">
                     <p>Search for babes</p>
                 </div>
                 <form class="search-form" action="">
                     <div class="searchbar">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <input type="text" name="Search" placeholder="Search by location"> 
+                        <input type="text" id="searchInput" placeholder="Search by location"> 
                     </div>
- 
-                    <button class="search-btn" type="search" onclick="handleSearch()">Search</button>
+                    <button class="search-btn" type="submit">Search</button>
                 </form>
-
-                <div id="resultsContainer"></div>
             </div>
+            
+            <div id="resultsContainer"></div>
      </div> 
 </body>
 </html>
