@@ -87,6 +87,14 @@
 .result-name{
     font-size: .7em;
 }
+#sr{
+    display: none;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
 
 @media screen and (max-width: 600px) {
     #resultsContainer {

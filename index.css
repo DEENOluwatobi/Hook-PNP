@@ -107,6 +107,7 @@
 .search-con{
     width: 70%;
     margin: 70px auto;
+    margin-bottom: 30px;
     padding: 50px;
     display: flex;
     justify-content: center;

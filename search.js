@@ -116,14 +116,12 @@ const database = [
 
 const searchInput = document.getElementById("searchInput");
 const resultsContainer = document.getElementById("resultsContainer");
+const searchTitle = document.getElementById('sr');
 
 const displayResults = (results) => {
   resultsContainer.textContent = "";
 
   results.forEach((result) => {
-    const resultHead = document.createElement("p")
-    resultHead.classList.add('result-head');
-    resultHead.textContent = "Search result";
 
       const resultElement = document.createElement("div");
       resultElement.classList.add('result-con')
@@ -211,13 +209,16 @@ document.querySelector(".search-form").addEventListener("submit", (event) => {
 
       if (isCountry) {
           handleCountrySearch(event);
+          searchTitle.style.display = 'flex';
       } else if (isState) {
           handleStateSearch(event);
+          searchTitle.style.display = 'flex';
       } else {
           resultsContainer.innerHTML = "<p>No results found for this location.</p>";
       }
   } else {
       resultsContainer.innerHTML = "<p>Please enter a location.</p>";
+      searchTitle.style.display = 'none';
   }
 });
 
