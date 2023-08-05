@@ -9,6 +9,17 @@ const SearchIcon = document.getElementById('icon');
 const searchInput = document.getElementById("searchInput"); 
 const resultsContainer = document.getElementById("resultsContainer");
 const searchTitle = document.getElementById('sr');
+const step2Container = document.getElementById("step-2");
+
+const progressBar2 = document.getElementById('prg2');
+const progressTitle2 = document.getElementById('prg1title2');
+const line1 = document.getElementById('line1');
+
+const progressBar3 = document.getElementById('prg3');
+const progressTitle3 = document.getElementById('prg1title3');
+const line2 = document.getElementById('line2');
+
+
 
 const SlideUp = () => {
 
@@ -36,7 +47,7 @@ const SlideUp = () => {
   searchHead.style.marginTop = '10px'; 
   searchHead.style.transition = 'margin-top 0.5s';
   
-  searchConDiv.style.marginTop = '50px'; 
+  searchConDiv.style.marginTop = '30px'; 
   searchConDiv.style.transition = 'margin-top 0.5s';  
 
   searchConDiv.style.padding = '20px 30px';
@@ -54,16 +65,23 @@ const SlideUp = () => {
 }
 
 const SlideInStep2 = () => {
+  searchConDiv.style.left = '-100%';
+  resultsContainer.style.left = '-100%';
   searchConDiv.style.opacity = '0';
-  resultsContainer.style.opacity = '0'
-  searchConDiv.style.transition = 'opacity 0.5s';
-  resultsContainer.style.transition = 'opacity 0.5s';
+  resultsContainer.style.opacity = '0';
+  progressBar2.style.backgroundColor = '#7103B6'
+  line1.style.backgroundColor = '#7103B6'
+  progressTitle2.style.color = '#7103B6'
 
   setTimeout(() => {
     searchConDiv.style.display = 'none';
     resultsContainer.style.display = 'none';
     searchTitle.style.display = 'none';
+    step2Container.style.display = 'flex'
+    step2Container.style.opacity = '10'
+    step2Container.style.transition = 'opacity 0.2s'
   }, 500);
+
 }
 
 const SlideInStep3 = () => {
@@ -221,7 +239,6 @@ const displayResults = (results) => {
 };
 
 const openStep2 = (selectedUser) => {
-  const step2Container = document.getElementById("step-2");
   step2Container.innerHTML = `
       <h2>User Information - Step 2</h2>
       <img src="${selectedUser.picture}" alt="${selectedUser.name}">
@@ -231,8 +248,7 @@ const openStep2 = (selectedUser) => {
       <p>State: ${selectedUser.state}</p>
       <!-- Add more information or actions for Step 2 here -->
   `;
-
-  // Move to Step 2 (step-2) after selecting a user
+ 
   SlideInStep2();
 };
 
