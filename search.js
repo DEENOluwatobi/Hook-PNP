@@ -2,10 +2,26 @@
 
 
 const SlideUp = () => {
-  const NavBar = document.getElementById('navBar')
+
+  function adjustWidthBasedOnScreenSize() {
+
+    const maxWidth800px = window.matchMedia('(max-width: 800px)').matches;
+    if (maxWidth800px) {
+        searchConDiv.style.width = '80%';
+    } else {
+      searchConDiv.style.width = '50%';
+      searchConDiv.style.transition = 'width 0.5s'
+    } 
+  }
+
+  const NavBar = document.getElementById('navBar');
   const welcomeDiv = document.getElementById('welcomeDiv');
   const searchConDiv = document.getElementById('searchConDiv');
-  const searchHead = document.getElementById('search-head')
+  const searchHead = document.getElementById('search-head');
+  const SearchBar = document.getElementById('searchbar');
+  const SearchBtn = document.getElementById('search-btn');
+  const SearchIcon = document.getElementById('icon');
+
   
   NavBar.style.display = 'none'
   welcomeDiv.style.opacity = '0';
@@ -22,6 +38,20 @@ const SlideUp = () => {
   
   searchConDiv.style.marginTop = '50px'; 
   searchConDiv.style.transition = 'margin-top 0.5s';  
+
+  searchConDiv.style.padding = '20px 30px';
+  searchConDiv.style.transition = 'padding 0.5s'
+
+  searchConDiv.style.borderRadius = '20px'
+  searchConDiv.style.transition = 'border-radius 0.5s'
+
+  SearchBar.style.padding = '12px';
+  SearchBtn.style.padding = '12px';
+
+
+  adjustWidthBasedOnScreenSize();
+
+ 
 }
 
 // ----------------------------------------------------------------------------
@@ -99,19 +129,19 @@ const database = [
       online: true
   },
   {
-    picture: 'Images/lady4.jpeg',
-    name: 'Jade Gomez',
-    state: 'Lagos',
-    country: 'Nigeria',
-    online: false,
-},
-{
-    picture: 'Images/lady5.jpeg',
-    name: 'Mama Debby',
-    state: 'Ogun',
-    country: 'Nigeria',
-    online: true
-},
+      picture: 'Images/lady4.jpeg',
+      name: 'Jade Gomez',
+      state: 'Lagos',
+      country: 'Nigeria',
+      online: false,
+  },
+  {
+      picture: 'Images/lady5.jpeg',
+      name: 'Mama Debby',
+      state: 'Ogun',
+      country: 'Nigeria',
+      online: true
+  },
 ];
 
 const searchInput = document.getElementById("searchInput");
