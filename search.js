@@ -1,5 +1,14 @@
 // HANDLES EVERYTHING ABOUT SEARCH
-
+const NavBar = document.getElementById('navBar');
+const welcomeDiv = document.getElementById('welcomeDiv');
+const searchConDiv = document.getElementById('searchConDiv');
+const searchHead = document.getElementById('search-head');
+const SearchBar = document.getElementById('searchbar');
+const SearchBtn = document.getElementById('search-btn');
+const SearchIcon = document.getElementById('icon');
+const searchInput = document.getElementById("searchInput"); 
+const resultsContainer = document.getElementById("resultsContainer");
+const searchTitle = document.getElementById('sr');
 
 const SlideUp = () => {
 
@@ -13,15 +22,6 @@ const SlideUp = () => {
       searchConDiv.style.transition = 'width 0.5s'
     } 
   }
-
-  const NavBar = document.getElementById('navBar');
-  const welcomeDiv = document.getElementById('welcomeDiv');
-  const searchConDiv = document.getElementById('searchConDiv');
-  const searchHead = document.getElementById('search-head');
-  const SearchBar = document.getElementById('searchbar');
-  const SearchBtn = document.getElementById('search-btn');
-  const SearchIcon = document.getElementById('icon');
-
   
   NavBar.style.display = 'none'
   welcomeDiv.style.opacity = '0';
@@ -51,7 +51,23 @@ const SlideUp = () => {
 
   adjustWidthBasedOnScreenSize();
 
- 
+}
+
+const SlideInStep2 = () => {
+  searchConDiv.style.opacity = '0';
+  resultsContainer.style.opacity = '0'
+  searchConDiv.style.transition = 'opacity 0.5s';
+  resultsContainer.style.transition = 'opacity 0.5s';
+
+  setTimeout(() => {
+    searchConDiv.style.display = 'none';
+    resultsContainer.style.display = 'none';
+    searchTitle.style.display = 'none';
+  }, 500);
+}
+
+const SlideInStep3 = () => {
+  
 }
 
 // ----------------------------------------------------------------------------
@@ -144,9 +160,7 @@ const database = [
   },
 ];
 
-const searchInput = document.getElementById("searchInput");
-const resultsContainer = document.getElementById("resultsContainer");
-const searchTitle = document.getElementById('sr');
+
 
 const displayResults = (results) => {
   resultsContainer.textContent = "";
@@ -198,7 +212,28 @@ const displayResults = (results) => {
 
       resultElement.appendChild(resultDetails);
       resultsContainer.appendChild(resultElement);
+
+
+      resultElement.addEventListener("click", () => {
+        openStep2(result);
+      });
   });
+};
+
+const openStep2 = (selectedUser) => {
+  const step2Container = document.getElementById("step-2");
+  step2Container.innerHTML = `
+      <h2>User Information - Step 2</h2>
+      <img src="${selectedUser.picture}" alt="${selectedUser.name}">
+      <p>Name: ${selectedUser.name}</p>
+      <p>Online: ${selectedUser.online ? "Yes" : "No"}</p>
+      <p>Country: ${selectedUser.country}</p>
+      <p>State: ${selectedUser.state}</p>
+      <!-- Add more information or actions for Step 2 here -->
+  `;
+
+  // Move to Step 2 (step-2) after selecting a user
+  SlideInStep2();
 };
 
 const handleCountrySearch = (event) => {
@@ -244,13 +279,19 @@ document.querySelector(".search-form").addEventListener("submit", (event) => {
           handleStateSearch(event);
           searchTitle.style.display = 'flex';
       } else {
-          resultsContainer.innerHTML = "<p>No results found for this location.</p>";
+          resultsContainer.textContent = "No results found for this location.";
       }
   } else {
-      resultsContainer.innerHTML = "<p>Please enter a location.</p>";
+      resultsContainer.textContent = "Please enter a location.";
       searchTitle.style.display = 'none';
   }
 });
+
+
+
+
+
+
 
 
 window.onload = () => {
