@@ -10,13 +10,14 @@ const searchInput = document.getElementById("searchInput");
 const resultsContainer = document.getElementById("resultsContainer");
 const searchTitle = document.getElementById('sr');
 const step2Container = document.getElementById("step-2");
+const step3Container = document.getElementById("step-3");
 
 const progressBar2 = document.getElementById('prg2');
-const progressTitle2 = document.getElementById('prg1title2');
+const progressTitle2 = document.getElementById('prgtitle2');
 const line1 = document.getElementById('line1');
 
 const progressBar3 = document.getElementById('prg3');
-const progressTitle3 = document.getElementById('prg1title3');
+const progressTitle3 = document.getElementById('prgtitle3');
 const line2 = document.getElementById('line2');
 
 
@@ -64,9 +65,46 @@ const SlideUp = () => {
 
 }
 
+// const SlideInStep2 = () => {
+//   searchConDiv.style.left = '-100%';
+//   resultsContainer.style.left = '-100%';
+//   searchTitle.style.left = '-100%';
+//   searchConDiv.style.opacity = '0';
+//   resultsContainer.style.opacity = '0';
+//   progressBar2.style.backgroundColor = '#7103B6'
+//   line1.style.backgroundColor = '#7103B6'
+//   progressTitle2.style.color = '#7103B6'
+
+//   setTimeout(() => {
+//     searchConDiv.style.display = 'none';
+//     resultsContainer.style.display = 'none';
+//     searchTitle.style.display = 'none';
+//     step2Container.style.display = 'flex'
+//     step2Container.style.opacity = '10'
+//     step2Container.style.transition = 'opacity 0.2s'
+//   }, 500);
+
+// }
+
+// const SlideInStep3 = () => {
+//   step2Container.style.left = '-100%';
+//   step2Container.style.opacity = '0';
+
+//   progressBar2.style.backgroundColor = '#7103B6'
+//   line1.style.backgroundColor = '#7103B6'
+//   progressTitle2.style.color = '#7103B6'
+
+//   setTimeout(() => {
+//     step3Container.style.display = 'flex'
+//     step3Container.style.opacity = '10'
+//     step3Container.style.transition = 'opacity 0.2s'
+//   }, 500);
+// }
+
 const SlideInStep2 = () => {
   searchConDiv.style.left = '-100%';
   resultsContainer.style.left = '-100%';
+  searchTitle.style.left = '-100%';
   searchConDiv.style.opacity = '0';
   resultsContainer.style.opacity = '0';
   progressBar2.style.backgroundColor = '#7103B6'
@@ -77,16 +115,26 @@ const SlideInStep2 = () => {
     searchConDiv.style.display = 'none';
     resultsContainer.style.display = 'none';
     searchTitle.style.display = 'none';
-    step2Container.style.display = 'flex'
-    step2Container.style.opacity = '10'
-    step2Container.style.transition = 'opacity 0.2s'
+    step2Container.style.display = 'flex';
+    step2Container.style.opacity = '1'; // Changed to 1 to show step-2
+    step2Container.style.transition = 'opacity 0.2s';
   }, 500);
-
-}
+};
 
 const SlideInStep3 = () => {
-  
-}
+  step2Container.style.left = '-100%';
+  step2Container.style.opacity = '0'; 
+  line2.style.backgroundColor = '#7103B6'
+  progressBar3.style.backgroundColor = '#7103B6'
+  progressTitle3.style.color = '#7103B6'
+
+  setTimeout(() => {
+    step2Container.style.display = 'none';
+    step3Container.style.display = 'flex';
+    step3Container.style.opacity = '1'; // Changed to 1 to show step-3
+    step3Container.style.transition = 'opacity 0.2s';
+  }, 500);
+};
 
 // ----------------------------------------------------------------------------
 
@@ -94,87 +142,219 @@ const database = [
   {
       picture: 'Images/lady1.jpeg',
       name: 'Kim Wesley',
+      age: 20,
       state: 'New York',
       country: 'USA',
       online: true,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady2.jpeg',
+      age: 22,
       name: 'Mama Debby',
       state: 'Lagos',
       country: 'Nigeia',
       online: true,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady3.jpeg',
+      age: 21,
       name: 'Juliet Sexy',
       state: 'Tokyo',
       country: 'China',
       online: false,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady4.jpeg',
+      age: 21,
       name: 'Jade Gomez',
       state: 'Lagos',
       country: 'Nigeria',
       online: false,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady5.jpeg',
+      age: 20,
       name: 'Mama Debby',
       state: 'Ogun',
       country: 'Nigeria',
-      online: true
+      online: true,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
 
   {
       picture: 'Images/lady1.jpeg',
       name: 'Kim Wesley',
+      age: 20,
       state: 'New York',
       country: 'USA',
       online: true,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady2.jpeg',
       name: 'Mama Debby',
       state: 'Lagos',
+      age: 20,
       country: 'Nigeia',
       online: true,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady3.jpeg',
       name: 'Juliet Sexy',
       state: 'Tokyo',
       country: 'China',
+      age: 20,
       online: false,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady4.jpeg',
       name: 'Jade Gomez',
+      age: 20,
       state: 'Lagos',
       country: 'Nigeria',
       online: false,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady5.jpeg',
       name: 'Mama Debby',
       state: 'Ogun',
+      age: 20,
       country: 'Nigeria',
-      online: true
+      online: true,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady4.jpeg',
       name: 'Jade Gomez',
       state: 'Lagos',
+      age: 20,
       country: 'Nigeria',
       online: false,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
   {
       picture: 'Images/lady5.jpeg',
       name: 'Mama Debby',
       state: 'Ogun',
+      age: 20,
       country: 'Nigeria',
-      online: true
+      online: true,
+      shortTime: 10000,
+      overNight: 10000,
+      pic1: '/Images/lady1.jpeg',
+      pic2: '/Images/lady2.jpeg',
+      pic3: '/Images/lady3.jpeg',
+      pic4: '/Images/lady4.jpeg',
+      pic5: '/Images/lady5.jpeg',
+      pic6: '/Images/lady1.jpeg',
+      pic7: '/Images/lady2.jpeg',
+      pic8: '/Images/lady3.jpeg',
   },
 ];
 
@@ -248,9 +428,51 @@ const openStep2 = (selectedUser) => {
       <p>State: ${selectedUser.state}</p>
       <!-- Add more information or actions for Step 2 here -->
   `;
- 
+
+
+  const NextBtn = document.createElement('button');
+  NextBtn.innerText = "Book" + " " + `${selectedUser.name}`;
+  NextBtn.addEventListener("click", () => {
+    openStep3(selectedUser);
+  });
+
+  step2Container.appendChild(NextBtn);
+  step2Container.classList.remove('step-hidden');
+  step2Container.classList.add('step-enter');
+  
   SlideInStep2();
 };
+
+const openStep3 = (selectedUser) => {
+  step3Container.innerHTML = `
+      <h2>Payment - Step 3</h2>
+      <img src="${selectedUser.picture}" alt="${selectedUser.name}">
+      <p>Name: ${selectedUser.name}</p>
+      <p>Online: ${selectedUser.online ? "Yes" : "No"}</p>
+      <p>Country: ${selectedUser.country}</p>
+      <p>State: ${selectedUser.state}</p>
+      <!-- Add more information or actions for Step 2 here -->
+  `;
+
+  const NextBtn = step2Container.querySelector('button');
+  if (NextBtn) {
+    NextBtn.remove();
+  }
+
+  // const BackBtn = document.createElement('button');
+  // BackBtn.innerText = "Back";
+  // BackBtn.addEventListener("click", () => {
+  //   openStep2();
+  //   step3Container.innerHTML = ""; 
+  // });
+
+  // step3Container.appendChild(BackBtn);
+
+  SlideInStep3();
+};
+
+
+
 
 const handleCountrySearch = (event) => {
   event.preventDefault();

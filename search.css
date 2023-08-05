@@ -46,11 +46,11 @@
 }
 
 #prg2{
-    position: relative;
+    background-color: #9c9a9d
 }
 
 #prg3{
-    position: relative;
+    background-color: #9c9a9d
 }
 
 .line{
@@ -150,19 +150,41 @@
 }
 #searchConDiv,
 #resultsContainer,
-#searchTitle {
+#sr,
+#step-2,
+#step-3 {
   position: relative;
   left: 0;
   opacity: 1;
   transition: left 0.5s, opacity 0.5s;
 }
-#step-2{
+
+#step-2,
+#step-3 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* #searchConDiv,
+#resultsContainer,
+#sr,
+#step-2 {
+  position: relative;
+  left: 0;
+  opacity: 1;
+  transition: left 0.5s, opacity 0.5s;
+}
+
+#step-2,
+#step-3{
     display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     opacity: 0;
-}
+} */
 
   
 
