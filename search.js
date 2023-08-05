@@ -118,15 +118,19 @@ const searchInput = document.getElementById("searchInput");
 const resultsContainer = document.getElementById("resultsContainer");
 
 const displayResults = (results) => {
-  resultsContainer.innerHTML = "";
+  resultsContainer.textContent = "";
 
   results.forEach((result) => {
+    const resultHead = document.createElement("p")
+    resultHead.classList.add('result-head');
+    resultHead.textContent = "Search result";
+
       const resultElement = document.createElement("div");
       resultElement.classList.add('result-con')
       resultElement.style.backgroundImage = `url(${result.picture})`
       resultElement.style.backgroundSize = 'cover';
       resultElement.style.backgroundPosition = "center";
-
+ 
       const resultDetails = document.createElement('div');
       resultDetails.classList.add('result-details-con');
 
@@ -191,8 +195,31 @@ const handleStateSearch = (event) => {
   displayResults(results);
 };
 
-document.querySelector(".search-form").addEventListener("submit", handleCountrySearch, handleStateSearch);
 
+
+document.querySelector(".search-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  const searchQuery = searchInput.value.trim().toLowerCase();
+
+  if (searchQuery) {
+      const isCountry = database.some((item) =>
+          item.country.toLowerCase().includes(searchQuery)
+      );
+      const isState = database.some((item) =>
+          item.state.toLowerCase().includes(searchQuery)
+      );
+
+      if (isCountry) {
+          handleCountrySearch(event);
+      } else if (isState) {
+          handleStateSearch(event);
+      } else {
+          resultsContainer.innerHTML = "<p>No results found for this location.</p>";
+      }
+  } else {
+      resultsContainer.innerHTML = "<p>Please enter a location.</p>";
+  }
+});
 
 
 window.onload = () => {
