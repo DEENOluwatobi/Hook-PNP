@@ -36,70 +36,33 @@ const SlideUp = () => {
   }
   
   NavBar.style.display = 'none'
+  NavBar.style.transition = 'display 0.5s'
+
   welcomeDiv.style.opacity = '0';
   welcomeDiv.style.height = '0';
   welcomeDiv.style.transition = 'opacity 0.5s, height 0.5s';
+
   searchHead.style.display = 'flex'
   searchHead.style.opacity = '1'
   searchHead.style.transition = 'opacity 0.5s, height 0.5s';
-
-  NavBar.style.transition = 'display 0.5s'
-
   searchHead.style.marginTop = '10px'; 
   searchHead.style.transition = 'margin-top 0.5s';
   
   searchConDiv.style.marginTop = '30px'; 
   searchConDiv.style.transition = 'margin-top 0.5s';  
-
   searchConDiv.style.padding = '20px 30px';
   searchConDiv.style.transition = 'padding 0.5s'
-
-  searchConDiv.style.borderRadius = '20px'
+  searchConDiv.style.borderRadius = '20px';
   searchConDiv.style.transition = 'border-radius 0.5s'
 
   SearchBar.style.padding = '12px';
+
   SearchBtn.style.padding = '12px';
 
 
   adjustWidthBasedOnScreenSize();
 
 }
-
-// const SlideInStep2 = () => {
-//   searchConDiv.style.left = '-100%';
-//   resultsContainer.style.left = '-100%';
-//   searchTitle.style.left = '-100%';
-//   searchConDiv.style.opacity = '0';
-//   resultsContainer.style.opacity = '0';
-//   progressBar2.style.backgroundColor = '#7103B6'
-//   line1.style.backgroundColor = '#7103B6'
-//   progressTitle2.style.color = '#7103B6'
-
-//   setTimeout(() => {
-//     searchConDiv.style.display = 'none';
-//     resultsContainer.style.display = 'none';
-//     searchTitle.style.display = 'none';
-//     step2Container.style.display = 'flex'
-//     step2Container.style.opacity = '10'
-//     step2Container.style.transition = 'opacity 0.2s'
-//   }, 500);
-
-// }
-
-// const SlideInStep3 = () => {
-//   step2Container.style.left = '-100%';
-//   step2Container.style.opacity = '0';
-
-//   progressBar2.style.backgroundColor = '#7103B6'
-//   line1.style.backgroundColor = '#7103B6'
-//   progressTitle2.style.color = '#7103B6'
-
-//   setTimeout(() => {
-//     step3Container.style.display = 'flex'
-//     step3Container.style.opacity = '10'
-//     step3Container.style.transition = 'opacity 0.2s'
-//   }, 500);
-// }
 
 const SlideInStep2 = () => {
   searchConDiv.style.left = '-100%';
@@ -116,7 +79,7 @@ const SlideInStep2 = () => {
     resultsContainer.style.display = 'none';
     searchTitle.style.display = 'none';
     step2Container.style.display = 'flex';
-    step2Container.style.opacity = '1'; // Changed to 1 to show step-2
+    step2Container.style.opacity = '1';
     step2Container.style.transition = 'opacity 0.2s';
   }, 500);
 };
@@ -131,7 +94,7 @@ const SlideInStep3 = () => {
   setTimeout(() => {
     step2Container.style.display = 'none';
     step3Container.style.display = 'flex';
-    step3Container.style.opacity = '1'; // Changed to 1 to show step-3
+    step3Container.style.opacity = '1'; 
     step3Container.style.transition = 'opacity 0.2s';
   }, 500);
 };
@@ -419,26 +382,34 @@ const displayResults = (results) => {
 };
 
 const openStep2 = (selectedUser) => {
-  step2Container.innerHTML = `
-      <h2>User Information - Step 2</h2>
-      <img src="${selectedUser.picture}" alt="${selectedUser.name}">
-      <p>Name: ${selectedUser.name}</p>
-      <p>Online: ${selectedUser.online ? "Yes" : "No"}</p>
-      <p>Country: ${selectedUser.country}</p>
-      <p>State: ${selectedUser.state}</p>
-      <!-- Add more information or actions for Step 2 here -->
-  `;
+
+  const StepTwo = document.createElement('div')
+  StepTwo.textContent = 'YOOOO'
+ 
+
+
+
+  // step2Container.innerHTML = `
+  //     <h2>User Information - Step 2</h2>
+  //     <img src="${selectedUser.picture}" alt="${selectedUser.name}">
+  //     <p>Name: ${selectedUser.name}</p>
+  //     <p>Online: ${selectedUser.online ? "Yes" : "No"}</p>
+  //     <p>Country: ${selectedUser.country}</p>
+  //     <p>State: ${selectedUser.state}</p>
+  //     <!-- Add more information or actions for Step 2 here -->
+  // `;
 
 
   const NextBtn = document.createElement('button');
+  NextBtn.classList.add("next-btn");
   NextBtn.innerText = "Book" + " " + `${selectedUser.name}`;
   NextBtn.addEventListener("click", () => {
     openStep3(selectedUser);
   });
 
+
+  step2Container.appendChild(StepTwo);
   step2Container.appendChild(NextBtn);
-  step2Container.classList.remove('step-hidden');
-  step2Container.classList.add('step-enter');
   
   SlideInStep2();
 };
