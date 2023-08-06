@@ -180,6 +180,40 @@
     color: white;
     background-color: #a229ee;
 }
+.step-two{
+    width: 100%;
+}
+
+.step-2-header{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.step-2-body{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    gap: 10px;
+}
+
+.profilepic,
+.album1,
+.album2{
+    width: 20%;
+    height: 250px;
+    border: 2px solid #7103B6;
+    border-radius: 10px;
+}
+
+.profilepic{
+    
+}
 
 @media screen and (max-width: 600px) {
     #resultsContainer {

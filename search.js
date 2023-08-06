@@ -383,10 +383,60 @@ const displayResults = (results) => {
 
 const openStep2 = (selectedUser) => {
 
-  const StepTwo = document.createElement('div')
-  StepTwo.textContent = 'YOOOO'
- 
+const StepTwo = document.createElement('div');
+StepTwo.classList.add('step-two');
+  
+  // PAGE OR STEP-2 HEAD
+  const Step2Header = document.createElement('div');
+  Step2Header.classList.add('step-2-header');
 
+  const Step2Content = document.createElement('div');
+  Step2Content.classList.add('step-2-content')
+  Step2Content.textContent = `${selectedUser.name}`;
+
+  const Step2Info = document.createElement('div');
+  Step2Info.classList.add('info-card');
+      
+  const Step2Status = document.createElement('div');
+  Step2Status.classList.add('status-container');
+
+  const Step2Dot = document.createElement('span');
+  Step2Dot.classList.add('status-dot', selectedUser.online ? 'online' : 'offline');
+
+  const Step2Text = document.createElement('span');
+  Step2Text.classList.add(selectedUser.online ? 'online-status' : 'offline-status');
+  Step2Text.textContent = selectedUser.online ? 'Online' : 'Offline';
+
+  const Step2Location = document.createElement('p');
+  Step2Location.classList.add('result-location'); 
+  Step2Location.textContent = `${selectedUser.state}, ${selectedUser.country}`; 
+  
+  // PAGE OR STEP-2 BODY
+  const Step2Body = document.createElement('div');
+  Step2Body.classList.add('step-2-body');
+
+  const Step2ProPic = document.createElement('div');
+  Step2ProPic.classList.add('profilepic');
+  Step2ProPic.style.background = `url(${selectedUser.picture})`
+  Step2ProPic.style.backgroundSize= "cover";
+  Step2ProPic.style.backgroundPosition = "center";
+
+  const Album1 = document.createElement('div');
+  Album1.classList.add('album1');
+
+
+
+
+  const Album2 = document.createElement('div');
+  Album2.classList.add('album2');
+
+
+
+
+
+  Step2Body.appendChild(Step2ProPic);
+  Step2Body.appendChild(Album1);
+  Step2Body.appendChild(Album2);
 
 
   // step2Container.innerHTML = `
@@ -408,6 +458,14 @@ const openStep2 = (selectedUser) => {
   });
 
 
+  Step2Status.appendChild(Step2Dot);
+  Step2Status.appendChild(Step2Text);
+  Step2Info.appendChild(Step2Status);
+  Step2Info.appendChild(Step2Location);
+  Step2Content.appendChild(Step2Info);
+  Step2Header.appendChild(Step2Content);
+  StepTwo.appendChild(Step2Header);
+  StepTwo.appendChild(Step2Body);
   step2Container.appendChild(StepTwo);
   step2Container.appendChild(NextBtn);
   
