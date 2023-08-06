@@ -678,8 +678,6 @@ const openStep3 = (selectedUser) => {
   PayBtn.innerText = "Pay with PayStack";
 
 
-
-
   Select.appendChild(OptionOne);
   Select.appendChild(OptionTwo);
 
@@ -797,4 +795,4 @@ document.querySelector(".search-form").addEventListener("submit", (event) => {
 
 window.onload = () => {
   displayResults();
-}
+};
