@@ -119,6 +119,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady2.jpeg',
@@ -137,6 +139,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady3.jpeg',
@@ -155,6 +159,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady4.jpeg',
@@ -173,6 +179,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady5.jpeg',
@@ -191,6 +199,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
 
   {
@@ -210,6 +220,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady2.jpeg',
@@ -228,6 +240,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady3.jpeg',
@@ -246,6 +260,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady4.jpeg',
@@ -264,6 +280,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady5.jpeg',
@@ -282,6 +300,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady4.jpeg',
@@ -300,6 +320,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
   {
       picture: 'Images/lady5.jpeg',
@@ -318,6 +340,8 @@ const database = [
       pic6: '/Images/lady1.jpeg',
       pic7: '/Images/lady2.jpeg',
       pic8: '/Images/lady3.jpeg',
+      pic9: '/Images/lady1.jpeg',
+      bio: `I am a talented and driven marketing professional with a passion for creating impactful campaigns. With a bachelor's degree in Marketing and several years of experience in the industry, I have developed a strong understanding of market trends, consumer behavior, and effective communication strategies. My creativity shines through in my ability to develop innovative marketing concepts and my eye for detail in crafting compelling content.`
   },
 ];
 
@@ -383,89 +407,202 @@ const displayResults = (results) => {
 
 const openStep2 = (selectedUser) => {
 
-const StepTwo = document.createElement('div');
-StepTwo.classList.add('step-two');
-  
-  // PAGE OR STEP-2 HEAD
-  const Step2Header = document.createElement('div');
-  Step2Header.classList.add('step-2-header');
-
-  const Step2Content = document.createElement('div');
-  Step2Content.classList.add('step-2-content')
-  Step2Content.textContent = `${selectedUser.name}`;
-
-  const Step2Info = document.createElement('div');
-  Step2Info.classList.add('info-card');
+    const StepTwo = document.createElement('div');
+    StepTwo.classList.add('step-two');
       
-  const Step2Status = document.createElement('div');
-  Step2Status.classList.add('status-container');
+      // PAGE OR STEP-2 HEAD
+      const Step2Header = document.createElement('div');
+      Step2Header.classList.add('step-2-header');
 
-  const Step2Dot = document.createElement('span');
-  Step2Dot.classList.add('status-dot', selectedUser.online ? 'online' : 'offline');
+      const Step2Content = document.createElement('div');
+      Step2Content.classList.add('step-2-content')
+      Step2Content.textContent = `${selectedUser.name}`;
 
-  const Step2Text = document.createElement('span');
-  Step2Text.classList.add(selectedUser.online ? 'online-status' : 'offline-status');
-  Step2Text.textContent = selectedUser.online ? 'Online' : 'Offline';
+      const Step2Info = document.createElement('div');
+      Step2Info.classList.add('info-card');
+          
+      const Step2Status = document.createElement('div');
+      Step2Status.classList.add('status-container');
 
-  const Step2Location = document.createElement('p');
-  Step2Location.classList.add('result-location'); 
-  Step2Location.textContent = `${selectedUser.state}, ${selectedUser.country}`; 
-  
-  // PAGE OR STEP-2 BODY
-  const Step2Body = document.createElement('div');
-  Step2Body.classList.add('step-2-body');
+      const Step2Dot = document.createElement('span');
+      Step2Dot.classList.add('status-dot', selectedUser.online ? 'online' : 'offline');
 
-  const Step2ProPic = document.createElement('div');
-  Step2ProPic.classList.add('profilepic');
-  Step2ProPic.style.background = `url(${selectedUser.picture})`
-  Step2ProPic.style.backgroundSize= "cover";
-  Step2ProPic.style.backgroundPosition = "center";
+      const Step2Text = document.createElement('span');
+      Step2Text.classList.add(selectedUser.online ? 'online-status' : 'offline-status');
+      Step2Text.textContent = selectedUser.online ? 'Online' : 'Offline';
 
-  const Album1 = document.createElement('div');
-  Album1.classList.add('album1');
+      const Step2Location = document.createElement('p');
+      Step2Location.classList.add('result-location'); 
+      Step2Location.textContent = `${selectedUser.state}, ${selectedUser.country}`; 
+      
+      // PAGE OR STEP-2 BODY
+      const Step2Body = document.createElement('div');
+      Step2Body.classList.add('step-2-body');
+
+      const Step2ProPic = document.createElement('div');
+      Step2ProPic.classList.add('profilepic');
+      Step2ProPic.style.background = `url(${selectedUser.picture})`;
+      Step2ProPic.style.backgroundSize= "cover";
+      Step2ProPic.style.backgroundPosition = "center";
+
+      const Album1 = document.createElement('div');
+      Album1.classList.add('album1');
+
+        const Pic2 = document.createElement('div')
+        Pic2.classList.add("pic");
+        Pic2.style.background = `url(${selectedUser.pic2})`;
+        Pic2.style.backgroundSize= "cover";
+        Pic2.style.backgroundPosition = "center";
+
+        const Pic3 = document.createElement('div')
+        Pic3.classList.add("pic");
+        Pic3.style.background = `url(${selectedUser.pic3})`;
+        Pic3.style.backgroundSize= "cover";
+        Pic3.style.backgroundPosition = "center";
+
+        const Pic4 = document.createElement('div')
+        Pic4.classList.add("pic");
+        Pic4.style.background = `url(${selectedUser.pic4})`;
+        Pic4.style.backgroundSize= "cover";
+        Pic4.style.backgroundPosition = "center";
+
+        const Pic5 = document.createElement('div')
+        Pic5.classList.add("pic");
+        Pic5.style.background = `url(${selectedUser.pic5})`;
+        Pic5.style.backgroundSize= "cover";
+        Pic5.style.backgroundPosition = "center";
+
+      const Album2 = document.createElement('div');
+      Album2.classList.add('album2');
+
+        const Pic6 = document.createElement('div')
+        Pic6.classList.add("pic");
+        Pic6.style.background = `url(${selectedUser.pic6})`;
+        Pic6.style.backgroundSize= "cover";
+        Pic6.style.backgroundPosition = "center";
+
+        const Pic7 = document.createElement('div')
+        Pic7.classList.add("pic");
+        Pic7.style.background = `url(${selectedUser.pic7})`;
+        Pic7.style.backgroundSize= "cover";
+        Pic7.style.backgroundPosition = "center";
+
+        const Pic8 = document.createElement('div')
+        Pic8.classList.add("pic");
+        Pic8.style.background = `url(${selectedUser.pic8})`;
+        Pic8.style.backgroundSize= "cover";
+        Pic8.style.backgroundPosition = "center";
+
+        const Pic9 = document.createElement('div')
+        Pic9.classList.add("pic");
+        Pic9.style.background = `url(${selectedUser.pic9})`;
+        Pic9.style.backgroundSize= "cover";
+        Pic9.style.backgroundPosition = "center";
 
 
 
 
-  const Album2 = document.createElement('div');
-  Album2.classList.add('album2');
 
 
+      const AboutSection = document.createElement('div'); 
+      AboutSection.classList.add('about-section');
+      
+      const BioSection = document.createElement('div');
+      BioSection.classList.add('bio-section');
+        
+        const BioHead = document.createElement('p');
+        BioHead.classList.add('heads');
+        BioHead.textContent = 'Bio'; 
+
+        const Bio = document.createElement('div');
+        Bio.classList.add('bio');
+        Bio.textContent = `${selectedUser.bio}`;
 
 
+      const OtherSection = document.createElement('div');
+      OtherSection.classList.add('other-section');
+
+      const AgeDiv = document.createElement('div');
+        const AgeHead = document.createElement('p');
+        AgeHead.classList.add('heads');
+        AgeHead.textContent = 'Age'; 
+
+        const Age = document.createElement('div');
+        Age.classList.add('age');
+        Age.textContent = `${selectedUser.age}`;
+      
+      const LocationDiv = document.createElement('div');
+        const LocationHead = document.createElement('p');
+        LocationHead.classList.add('heads');
+        LocationHead.textContent = 'Location'; 
+
+        const Location = document.createElement('div');
+        Location.classList.add('location');
+        Location.textContent = `${selectedUser.state}` + "," + " " + `${selectedUser.country}`;
+   
+      const PriceDiv = document.createElement('div');
+        const PriceHead = document.createElement('p');
+        PriceHead.classList.add('heads');
+        PriceHead.textContent = 'Price'; 
+
+        const Price = document.createElement('div');
+        Price.classList.add('price');
+        Price.textContent = "Overnight: " + `${selectedUser.overNight}` + "." + " " + "Short Time: " + `${selectedUser.shortTime}`;
+   
+
+      const NextBtn = document.createElement('button');
+      NextBtn.classList.add("next-btn");
+      NextBtn.innerText = "Book" + " " + `${selectedUser.name}`;
+      NextBtn.addEventListener("click", () => {
+        openStep3(selectedUser);
+  });
+
+  PriceDiv.appendChild(PriceHead);
+  PriceDiv.appendChild(Price);
+
+  LocationDiv.appendChild(LocationHead);
+  LocationDiv.appendChild(Location);
+
+  AgeDiv.appendChild(AgeHead);
+  AgeDiv.appendChild(Age);
+
+  OtherSection.appendChild(AgeDiv);
+  OtherSection.appendChild(LocationDiv);
+  OtherSection.appendChild(PriceDiv);
+
+  BioSection.appendChild(BioHead);
+  BioSection.appendChild(Bio);
+
+  AboutSection.appendChild(BioSection);
+  AboutSection.appendChild(OtherSection);
+
+  Album2.appendChild(Pic6);
+  Album2.appendChild(Pic7);
+  Album2.appendChild(Pic8);
+  Album2.appendChild(Pic9);
+
+  Album1.appendChild(Pic2);
+  Album1.appendChild(Pic3);
+  Album1.appendChild(Pic4);
+  Album1.appendChild(Pic5);
 
   Step2Body.appendChild(Step2ProPic);
   Step2Body.appendChild(Album1);
   Step2Body.appendChild(Album2);
 
-
-  // step2Container.innerHTML = `
-  //     <h2>User Information - Step 2</h2>
-  //     <img src="${selectedUser.picture}" alt="${selectedUser.name}">
-  //     <p>Name: ${selectedUser.name}</p>
-  //     <p>Online: ${selectedUser.online ? "Yes" : "No"}</p>
-  //     <p>Country: ${selectedUser.country}</p>
-  //     <p>State: ${selectedUser.state}</p>
-  //     <!-- Add more information or actions for Step 2 here -->
-  // `;
-
-
-  const NextBtn = document.createElement('button');
-  NextBtn.classList.add("next-btn");
-  NextBtn.innerText = "Book" + " " + `${selectedUser.name}`;
-  NextBtn.addEventListener("click", () => {
-    openStep3(selectedUser);
-  });
-
-
   Step2Status.appendChild(Step2Dot);
   Step2Status.appendChild(Step2Text);
+
   Step2Info.appendChild(Step2Status);
   Step2Info.appendChild(Step2Location);
+
   Step2Content.appendChild(Step2Info);
   Step2Header.appendChild(Step2Content);
+
   StepTwo.appendChild(Step2Header);
   StepTwo.appendChild(Step2Body);
+  StepTwo.appendChild(AboutSection);
+
   step2Container.appendChild(StepTwo);
   step2Container.appendChild(NextBtn);
   
