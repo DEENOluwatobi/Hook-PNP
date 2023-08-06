@@ -110,7 +110,7 @@ const database = [
       country: 'USA',
       online: true,
       shortTime: 10000,
-      overNight: 10000,
+      overNight: 25000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -129,8 +129,8 @@ const database = [
       state: 'Lagos',
       country: 'Nigeia',
       online: true,
-      shortTime: 10000,
-      overNight: 10000,
+      shortTime: 15000,
+      overNight: 34000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -149,8 +149,8 @@ const database = [
       state: 'Tokyo',
       country: 'China',
       online: false,
-      shortTime: 10000,
-      overNight: 10000,
+      shortTime: 14000,
+      overNight: 53000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -170,7 +170,7 @@ const database = [
       country: 'Nigeria',
       online: false,
       shortTime: 10000,
-      overNight: 10000,
+      overNight: 30000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -190,7 +190,7 @@ const database = [
       country: 'Nigeria',
       online: true,
       shortTime: 10000,
-      overNight: 10000,
+      overNight: 23000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -210,8 +210,8 @@ const database = [
       state: 'New York',
       country: 'USA',
       online: true,
-      shortTime: 10000,
-      overNight: 10000,
+      shortTime: 5000,
+      overNight: 15000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -230,8 +230,8 @@ const database = [
       age: 20,
       country: 'Nigeia',
       online: true,
-      shortTime: 10000,
-      overNight: 10000,
+      shortTime: 8000,
+      overNight: 19000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -250,8 +250,8 @@ const database = [
       country: 'China',
       age: 20,
       online: false,
-      shortTime: 10000,
-      overNight: 10000,
+      shortTime: 13000,
+      overNight: 40000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -270,8 +270,8 @@ const database = [
       state: 'Lagos',
       country: 'Nigeria',
       online: false,
-      shortTime: 10000,
-      overNight: 10000,
+      shortTime: 30000,
+      overNight: 99000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -290,8 +290,8 @@ const database = [
       age: 20,
       country: 'Nigeria',
       online: true,
-      shortTime: 10000,
-      overNight: 10000,
+      shortTime: 12000,
+      overNight: 34000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -310,8 +310,8 @@ const database = [
       age: 20,
       country: 'Nigeria',
       online: false,
-      shortTime: 10000,
-      overNight: 10000,
+      shortTime: 23000,
+      overNight: 80000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -330,8 +330,8 @@ const database = [
       age: 20,
       country: 'Nigeria',
       online: true,
-      shortTime: 10000,
-      overNight: 10000,
+      shortTime: 11000,
+      overNight: 22000,
       pic1: '/Images/lady1.jpeg',
       pic2: '/Images/lady2.jpeg',
       pic3: '/Images/lady3.jpeg',
@@ -499,11 +499,6 @@ const openStep2 = (selectedUser) => {
         Pic9.style.backgroundSize= "cover";
         Pic9.style.backgroundPosition = "center";
 
-
-
-
-
-
       const AboutSection = document.createElement('div'); 
       AboutSection.classList.add('about-section');
       
@@ -609,16 +604,123 @@ const openStep2 = (selectedUser) => {
   SlideInStep2();
 };
 
+
+// PAYMENT PAGE -----------------------------------------------------------
 const openStep3 = (selectedUser) => {
-  step3Container.innerHTML = `
-      <h2>Payment - Step 3</h2>
-      <img src="${selectedUser.picture}" alt="${selectedUser.name}">
-      <p>Name: ${selectedUser.name}</p>
-      <p>Online: ${selectedUser.online ? "Yes" : "No"}</p>
-      <p>Country: ${selectedUser.country}</p>
-      <p>State: ${selectedUser.state}</p>
-      <!-- Add more information or actions for Step 2 here -->
-  `;
+
+  const StepThree = document.createElement('div');
+  StepThree.classList.add('step-three');
+
+  const Step3Header = document.createElement('div');
+  Step3Header.classList.add('step-3-header');
+
+  const Step3Name = document.createElement('p')
+  Step3Name.classList.add('step-3-name');
+  Step3Name.textContent = "Book " + `${selectedUser.name}`;
+
+  const Step3Des = document.createElement('p');
+  Step3Des.classList.add('step-3-des');
+  Step3Des.textContent = "Order Summary";
+
+  const Step3Body = document.createElement('div');
+  Step3Body.classList.add('step-3-body');
+
+  const Step3Type = document.createElement('div');
+  Step3Type.classList.add('step-3-tpl');
+   
+  const TypeLeft = document.createElement('div');
+  TypeLeft.classList.add('type-left');
+  TypeLeft.textContent = "Type";  
+
+  const TypeRight = document.createElement('div');
+  TypeRight.classList.add('type-right');
+
+    const Select = document.createElement('select');
+    Select.classList.add('select');
+
+    const OptionOne = document.createElement('option');
+    OptionOne.textContent = "Overnight";
+
+    const OptionTwo = document.createElement('option');
+    OptionTwo.textContent = "Short time";
+
+    // const ArrowDown = document.createElement('i');
+    // ArrowDown.classList.add('fa', 'fa-caret-down');
+
+  const Step3Price = document.createElement('div');
+  Step3Price.classList.add('step-3-tpl');
+
+    const PriceLeft = document.createElement('div');
+    PriceLeft.classList.add('price-left');
+    PriceLeft.textContent = "Price";  
+
+    const PriceRight = document.createElement('div');
+    PriceRight.classList.add('price-right');
+    PriceRight.textContent = "N" + " " + `${selectedUser.overNight}`
+
+  const Step3Location = document.createElement('div');
+  Step3Location.classList.add('step-3-tpl');
+
+    const LocationLeft = document.createElement('div');
+    LocationLeft.classList.add('location-left');
+    LocationLeft.textContent = "Location";  
+
+    const LocationRight = document.createElement('div');
+    LocationRight.classList.add('location-right');
+    LocationRight.textContent = `${selectedUser.state}`
+
+  const Step3BottomDes = document.createElement('p');
+  Step3BottomDes.classList.add('step-3-des', "bottom-des");
+  Step3BottomDes.textContent = "Payment Options";
+
+  const PayBtn = document.createElement('button');
+  PayBtn.classList.add("pay-btn");
+  PayBtn.innerText = "Pay with PayStack";
+
+
+
+
+  Select.appendChild(OptionOne);
+  Select.appendChild(OptionTwo);
+
+  TypeRight.appendChild(Select);
+  // TypeRight.appendChild(ArrowDown);
+
+  Step3Type.appendChild(TypeLeft);
+  Step3Type.appendChild(TypeRight);
+
+  Step3Price.appendChild(PriceLeft);
+  Step3Price.appendChild(PriceRight);
+
+  Step3Location.appendChild(LocationLeft);
+  Step3Location.appendChild(LocationRight);
+
+  Step3Body.appendChild(Step3Type);
+  Step3Body.appendChild(Step3Price);
+  Step3Body.appendChild(Step3Location);
+
+  Step3Header.appendChild(Step3Name);
+  Step3Header.appendChild(Step3Des);
+
+  StepThree.appendChild(Step3Header);
+  StepThree.appendChild(Step3Body)
+
+  step3Container.appendChild(StepThree);
+  step3Container.appendChild(Step3BottomDes);
+  step3Container.appendChild(PayBtn);
+
+  
+
+
+  Select.addEventListener('change', () => {
+    if (Select.value === 'Overnight') {
+      PriceRight.textContent = "N" + " " + selectedUser.overNight;
+    } else if (Select.value === 'Short time') {
+      PriceRight.textContent = "N" + " " + selectedUser.shortTime;
+    } else {
+      PriceRight.textContent = "N" + " " + selectedUser.overNight;
+    }
+  });
 
   const NextBtn = step2Container.querySelector('button');
   if (NextBtn) {
@@ -690,11 +792,6 @@ document.querySelector(".search-form").addEventListener("submit", (event) => {
       searchTitle.style.display = 'none';
   }
 });
-
-
-
-
-
 
 
 

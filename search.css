@@ -186,7 +186,8 @@
     width: 100%;
 }
 
-.step-2-header{
+.step-2-header,
+.step-3-header{
     margin-top: 30px;
     width: 100%;
     display: flex;
@@ -259,8 +260,63 @@
     color: #767577;
     margin-bottom: 10px;
 }
-
-
+.step-3-name{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 0;
+}
+.step-3-des{
+    font-size: .8em;
+    color: #767577;
+    margin-bottom: 10px;
+}
+.step-3-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.step-3-tpl{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.type-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+.select{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.pay-btn{
+    color: white;
+    text-decoration: none;
+    padding: 10px 80px;
+    background-color: #7103B6;
+    border-radius: 25px;
+    cursor: pointer;
+    border: none;
+    transition: .3s ease-in-out;
+    margin: 10px;
+}
+.pay-btn:hover{
+    color: white;
+    background-color: #a229ee;
+}
+.bottom-des{
+    margin-top: 50px;
+}
 @media screen and (max-width: 1250px){
    
     .profilepic,
@@ -336,5 +392,15 @@
     .welcome{
         margin-top: 5px;
     }  
-   
+    .step-3-tpl{
+        width: 300px;
+    }
+    .pay-btn{
+        padding: 10px 50px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .step-3-tpl{
+        width: 280px;
+    }
 }
